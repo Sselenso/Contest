@@ -216,10 +216,47 @@ body {
      object-fit: cover;
 }
 
+.title {
+  background: -o-linear-gradient(45deg, #fc466b, #3f5efb, #25aae1);
+  background: linear-gradient(45deg, #fc466b, #3f5efb, #25aae1);
+  background-size: 400% 400%;
+  -webkit-animation: gradient 10s ease infinite;
+  animation: gradient 10s ease infinite;
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+
+@-webkit-keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
 .condtitions__number {
   -webkit-box-flex: 0;
       -ms-flex: 0 1 10%;
           flex: 0 1 10%;
+}
+
+.condititons__item {
+  position: relative;
 }
 
 .conditions__subtitle {
