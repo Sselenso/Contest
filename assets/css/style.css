@@ -165,7 +165,9 @@ body {
   -webkit-box-align: baseline;
       -ms-flex-align: baseline;
           align-items: baseline;
-  text-align: start;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 }
@@ -196,14 +198,15 @@ body {
   text-decoration: none;
   font-size: 26px;
   font-weight: 700;
-  -webkit-transition: all 0.3s ease;
-  -o-transition: all 0.3s ease;
-  transition: all 0.3s ease;
+  -webkit-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
 }
 
 .link:hover {
   background-color: var(--color2);
   color: var(--color1);
+  padding: 10px 40px;
 }
 
 .main__img {
@@ -227,6 +230,9 @@ body {
       -ms-flex: 1 1 80%;
           flex: 1 1 80%;
   margin-left: 10px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .conditions__descr {
@@ -256,13 +262,19 @@ body {
       -ms-flex-direction: column;
           flex-direction: column;
   max-width: 90%;
+  border: 1px solid var(--color2);
+  border-radius: 5px;
 }
 
 .aplication-table {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  border: 1px solid var(--color2);
+  border-bottom: 1px solid var(--color2);
+}
+
+.aplication-table:last-child {
+  border-bottom: none;
 }
 
 .table-item {
@@ -326,6 +338,7 @@ body {
       -ms-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
   max-width: 500px;
+  width: 90vw; /* Занимает 90% площади экрана по горизонтали */
   padding: 20px;
   background-color: var(--color4);
   border-radius: 5px;
