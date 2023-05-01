@@ -85,6 +85,7 @@ h1, h2, h3, h4, h5, h6 {
 
 img {
   max-width: 100%;
+  border-radius: 10px;
 }
 
 body {
@@ -189,7 +190,7 @@ body {
   margin-right: 20px;
 }
 
-.link {
+.button {
   display: inline-block;
   background-color: var(--color1);
   color: var(--color4);
@@ -203,10 +204,51 @@ body {
   transition: all 0.5s ease;
 }
 
-.link:hover {
+.button:hover {
   background-color: var(--color2);
   color: var(--color1);
   padding: 10px 40px;
+}
+
+.link {
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--color1);
+  line-height: 1.5;
+}
+
+.link:hover {
+  color: var(--color2);
+}
+
+.header-cont {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  padding: 20px 0;
+  background-color: var(--color5);
+  margin-bottom: 30px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.navigation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.navigation-item {
+  margin-right: 20px;
+}
+
+.navigation-list {
+  font-size: 26px;
+  color: var(--color1);
+  line-height: 1.5;
 }
 
 .main__img {
@@ -447,6 +489,13 @@ body {
   margin: 10px 0;
 }
 
+.footer-cont {
+  background-color: var(--color5);
+  padding: 20px 0;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+}
+
 .footer__text {
   font-size: 20px;
   color: var(--color1);
@@ -491,6 +540,15 @@ body {
     font-size: 28px;
     padding: 10px;
   }
+  .header-cont {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
   .conditions--wrap {
     -webkit-box-orient: vertical;
     -webkit-box-direction: reverse;
@@ -528,6 +586,24 @@ body {
   }
   .link {
     font-size: 20px;
+  }
+  .header-cont {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .navigation-list {
+    font-size: 20px;
+    color: var(--color1);
+    margin-right: 0;
+    margin-right: -20px;
   }
   .aplication-table {
     -webkit-box-orient: vertical;

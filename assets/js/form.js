@@ -3,6 +3,8 @@ document.addEventListener("DOMContentLoaded", function () {
   var closeFormBtn = document.getElementById("close-form");
   var formPopup = document.getElementById("myForm");
 
+	
+
   // Show the form when "Sign up" button is clicked
   showFormBtn.addEventListener("click", function () {
     formPopup.style.display = "block";
