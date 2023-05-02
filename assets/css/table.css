@@ -153,7 +153,6 @@ body {
   font-weight: 700;
   color: var(--color1);
   line-height: 1.5;
-  margin-right: 20px;
 }
 
 .link:hover {
@@ -180,7 +179,7 @@ body {
   display: flex;
 }
 
-.navigation-list:not(:last-child) {
+.navigation-item:not(:last-child) {
   margin-right: 20px;
 }
 
@@ -205,7 +204,10 @@ body {
   background-color: var(--color2);
   font-weight: bold;
   padding: 10px;
-  text-align: left;
+  text-align: start;
+}
+
+.table__header:not(:first-child) {
   text-align: end;
 }
 
@@ -249,7 +251,6 @@ body {
   }
   .link {
     font-size: 20px;
-    margin-right: 10px;
   }
   .header-cont {
     display: -webkit-box;
@@ -266,7 +267,6 @@ body {
   .navigation-list {
     font-size: 20px;
     color: var(--color1);
-    margin-right: 10px;
   }
   .aplication-table {
     -webkit-box-orient: vertical;
@@ -292,7 +292,6 @@ body {
 @media (max-width: 320px) {
   .navigation-list {
     font-size: 14px;
-    margin-right: -10px;
   }
   .link {
     font-size: 14px;

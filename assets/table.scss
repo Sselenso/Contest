@@ -69,7 +69,7 @@ body {
 	font-weight: 700;
 	color: var(--color1);
 	line-height: 1.5;
-	margin-right: 20px;
+	//margin-right: 20px;
 }
 .link:hover{
 	color: var(--color2);
@@ -77,7 +77,7 @@ body {
 
 
 .header-cont {
-	display: flex;
+	display: flex;	
 	justify-content: flex-end;
 	padding: 20px 0;
 	background-color: var(--color5);
@@ -86,12 +86,12 @@ body {
 	border-bottom-right-radius: 10px;
 }
 .navigation {
-	display: flex;
-	
+	display: flex;	
 }
-.navigation-list:not(:last-child){
+.navigation-item:not(:last-child){
 	margin-right: 20px;
 }
+
 .navigation-list {
 	font-size: 26px;
 	color: var(--color1);
@@ -121,9 +121,10 @@ body {
   background-color:var(--color2);
   font-weight: bold;
   padding: 10px;
-  text-align: left;
+	text-align: start;	
+}
+.table__header:not(:first-child){
 	text-align: end;
-	
 }
 
 .table__row:hover {
@@ -136,6 +137,7 @@ body {
   padding: 10px;
   vertical-align: top;	
 }
+
 .table__cell:not(:first-child){
 	text-align: end;
 }
@@ -167,7 +169,7 @@ body {
 	}
 	.link{
 		font-size: 20px;
-		margin-right: 10px;
+		//margin-right: 10px;
 	}
 	.header-cont{
 		display: flex;
@@ -177,7 +179,7 @@ body {
 	.navigation-list {
     font-size: 20px;
     color: var(--color1);    
-    margin-right: 10px;
+    
     
 }
 	.aplication-table{
@@ -203,8 +205,7 @@ body {
 
 @media (max-width: 320px){
 	.navigation-list{
-		font-size: 14px;
-		margin-right: -10px;
+		font-size: 14px;		
 	}
 	.link{
 		font-size: 14px;		
